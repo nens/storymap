@@ -1,0 +1,146 @@
+title: Wateroverlast Berlijn 2017
+date: 14-05-2017
+attribution: 2017 Nelen & Schuurmans
+description: >
+    Lorem ipsum dolor sit amet, **consectetur adipisicing elit**,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.
+background-layers:
+  - title: Topografisch
+    url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
+stories:
+  - title: Wateroverlast in Limburg
+    description: >
+      De Dorppolder ligt in de gemeenten *Limmel en Heugem*. Met het
+      vergroten van de afvoercapaciteit door de bouw van een nieuw gemaal, wil
+      Maastricht de kans op wateroverlast in de polder verkleinen. De wens van
+      agrariërs om tegelijkertijd de polder te scheiden in twee delen, met voor
+      elk deel een eigen waterpeil en waterafvoer, blijkt niet haalbaar.
+    steps:
+      - title: Oude Steenweg, 10:00
+        body: >
+          Extract van Maastricht van waterdiepte bij T100 bui.
+          Met [links](http://www.google.com/) en ondersteuning voor plaatjes.
+          ![](http://media.nu.nl/m/87fx4q3aur4q_std320.jpg)
+        position:
+          latitude: 5.7296
+          longitude: 50.8802
+          zoom: 15
+          angle: 0
+        background-layers:
+          - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
+            legend:
+              - label: Danger
+                color: '#ff0000'
+              - label: Floodzone
+                color: '#2D8ACC'
+            opacity: 1
+      - title: Wiegershof, 10:15
+        body: >
+          Limmel ligt grotendeels in het winterbed van de Maas, wat in het verleden bij hoog water vaak tot wateroverlast leidde.
+        position:
+          latitude: 5.7025
+          longitude: 50.8849
+          zoom: 18
+          angle: 0
+        background-layers:
+          - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
+            legend:
+              - label: Danger
+                color: '#ff0000'
+              - label: Floodzone
+                color: '#2D8ACC'
+            opacity: 1
+      - title: Heerlen
+        body: >
+          Heerlen (Geluidsfragment uitspraak (info / uitleg)) (Limburgs:
+          plaatselijk Heële, elders Haerle of Haelder) is een Nederlandse
+          plaats en gemeente in het zuidoosten van de Nederlandse provincie
+          Limburg. Heerlen is de grootste gemeente in de Oostelijke Mijnstreek,
+          en de tweede grootste stad (plaats) in Zuid-Limburg.
+        position:
+          latitude: 5.9772
+          longitude: 50.8897
+          zoom: 14
+          angle: 0
+        background-layers:
+          - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
+            legend:
+              - label: Danger
+                color: '#ff0000'
+              - label: Floodzone
+                color: '#2D8ACC'
+            opacity: 1
+        compare:
+          - wms-url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=extern%3Anl%3Alimburg%3Awaterdepth_parkstad&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-07-28T09%3A51%3A08&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+            position:
+              latitude: 6.0122
+              longitude: 50.9052
+          - wms-url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=extern%3Anl%3Alimburg%3Awaterdepth_parkstad_ow&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-07-28T09%3A51%3A08&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+            position:
+              latitude: 6.0122
+              longitude: 50.9052
+
+  - title: Wateroverlast in Berlijn
+    description: >
+      Berlin, Germany’s capital, dates to the 13th century. Reminders of the
+      city's turbulent 20th-century history include its Holocaust memorial and
+      the Berlin Wall's graffitied remains.
+    steps:
+      - title: Overview
+        body: >
+          The city's also known for its art scene and modern landmarks like
+          the gold-colored, swoop-roofed Berliner Philharmonie, built in 1963.
+        position:
+          latitude: 13.3881604
+          longitude: 52.5075707
+          zoom: 10
+          angle: 0
+        background-layers:
+          - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
+            legend:
+              - label: Danger
+                color: '#ff0000'
+              - label: Floodzone
+                color: '#2D8ACC'
+            opacity: 1
+      - title: Dahme
+        body: >
+          The Dahme is a river that flows through the German states of
+          Brandenburg and Berlin. It is a left bank tributary of the River
+          Spree and is approximately 95 kilometres long.
+        position:
+          latitude: 13.5663752
+          longitude: 52.4387332
+          zoom: 15
+          angle: 0
+        background-layers:
+          - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
+            legend:
+              - label: Danger
+                color: '#ff0000'
+              - label: Floodzone
+                color: '#2D8ACC'
+            opacity: 1
+      - title: Old Spandau
+        body: >
+          Spandau is a locality (Ortsteil) of Berlin in the homonymous borough
+          (Bezirk) of Spandau. The historic city is situated, for the most
+          part, on the western banks of the Havel river.
+        position:
+          latitude: 13.2149376
+          longitude: 52.5375591
+          zoom: 15
+          angle: 0
+        background-layers:
+          - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
+            legend:
+              - label: Danger
+                color: '#ff0000'
+              - label: Floodzone
+                color: '#2D8ACC'
+            opacity: 1
