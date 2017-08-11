@@ -47,6 +47,7 @@ stories:
           longitude: 50.8849
           zoom: 18
           angle: 0
+          bearing: 90
         background-layers:
           - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
             legend:
@@ -57,8 +58,7 @@ stories:
             opacity: 1
       - title: Heerlen
         body: >
-          Heerlen (Geluidsfragment uitspraak (info / uitleg)) (Limburgs:
-          plaatselijk Heële, elders Haerle of Haelder) is een Nederlandse
+          Heerlen is een Nederlandse
           plaats en gemeente in het zuidoosten van de Nederlandse provincie
           Limburg. Heerlen is de grootste gemeente in de Oostelijke Mijnstreek,
           en de tweede grootste stad (plaats) in Zuid-Limburg.
@@ -67,6 +67,7 @@ stories:
           longitude: 50.8897
           zoom: 14
           angle: 0
+          bearing: 180
         background-layers:
           - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
             legend:
@@ -75,6 +76,8 @@ stories:
               - label: Floodzone
                 color: '#2D8ACC'
             opacity: 1
+        foreground-layers:
+          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=extern%3Anl%3Alimburg%3Awaterdepth_parkstad&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-07-28T09%3A51%3A08&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
         compare:
           - wms-url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=extern%3Anl%3Alimburg%3Awaterdepth_parkstad&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-07-28T09%3A51%3A08&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
             position:
@@ -84,6 +87,69 @@ stories:
             position:
               latitude: 6.0122
               longitude: 50.9052
+
+
+  - title: Rotterdam
+    description: >
+      Wateroverlast in regio Rotterdam, Een combinatie van een flinke westerstorm en vloed hebben vrijdag geleid tot een hoog waterpeil. Om die reden is de Maeslantkering in de Nieuwe Waterweg bij Hoek van Holland alvast gereed gemaakt voor een eventuele sluiting.
+    steps:
+      - title: Waterpeil
+        body: >
+          Een combinatie van een flinke westerstorm en vloed hebben vrijdag geleid tot een hoog waterpeil. Om die reden is de Maeslantkering in de Nieuwe Waterweg bij Hoek van Holland alvast gereed gemaakt voor een eventuele sluiting.
+        position:
+          latitude: 4.4848
+          longitude: 51.9188
+          zoom: 14
+          angle: 0
+          bearing: 0
+        background-layers:
+          - style: 'mapbox://styles/mapbox/satellite-v9'
+            legend:
+              - label: Danger
+                color: '#ff0000'
+              - label: Floodzone
+                color: '#2D8ACC'
+            opacity: 1
+        foreground-layers:
+          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=3di%3Arotterdam_3di&STYLES=Blues%3A0.03%3A0.2&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2016-04-01T08%3A00%3A00&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+      - title: Rijstroken A20 dicht
+        body: >
+          ![](https://pbs.twimg.com/media/DEhYNKMXsAAfLJ-.jpg) Knooppunt Kleinpolderplein op de A20 korte tijd afgesloten richting Hoek van Holland vanwege flinke wateroverlast. Het ging om de rijbaan tussen Rotterdam-Crooswijk en knooppunt Kleinpolderplein.
+        position:
+          latitude: 4.5110
+          longitude: 51.9474
+          zoom: 16
+          angle: 30
+          bearing: 180
+        background-layers:
+          - style: 'mapbox://styles/mapbox/streets-v8'
+            legend:
+              - label: Danger
+                color: '#ff0000'
+              - label: Floodzone
+                color: '#2D8ACC'
+            opacity: 1
+        foreground-layers:
+          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=3di%3Arotterdam_3di&STYLES=Blues%3A0.03%3A0.2&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2016-04-01T08%3A00%3A00&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+      - title: Hofweg
+        body: >
+          Volgens de brandweer zijn er meldingen binnengekomen van wateroverlast in Rotterdam, Schiedam en Maassluis. Het gaat om ondergelopen straten, tuinen en kelders.
+        position:
+          latitude: 4.4190
+          longitude: 51.9654
+          zoom: 18
+          angle: 30
+          bearing: 90
+        background-layers:
+          - style: 'mapbox://styles/mapbox/streets-v8'
+            legend:
+              - label: Danger
+                color: '#ff0000'
+              - label: Floodzone
+                color: '#2D8ACC'
+            opacity: 1
+        foreground-layers:
+          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=extern%3Anl%3Arotterdam%3Aselected_waterdepth&STYLES=Blues%3A0.03%3A0.2&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2016-05-01T01%3A55%3A00&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
 
   - title: Wateroverlast in Berlijn
     description: >
