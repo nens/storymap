@@ -1,25 +1,14 @@
 title: Wateroverlast Berlijn 2017
 date: 14-05-2017
 attribution: 2017 Nelen & Schuurmans
-description: >
-    Lorem ipsum dolor sit amet, **consectetur adipisicing elit**,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
 background-layers:
   - title: Topografisch
     url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
 stories:
   - title: Wateroverlast in Limburg
+    cover-image: https://static1.persgroep.net/volkskrant/image/d56d68c8-3622-455e-99bc-80c9821cb930?h=NGRkOWQ5MlpEVTJaRFk0WXpndE16WXlNaTAwTlRWbExUazVZbU10T0RCak9UZ3lNV05pT1RNd0x6UTRNSGd6TURn
     description: >
-      De Dorppolder ligt in de gemeenten *Limmel en Heugem*. Met het
-      vergroten van de afvoercapaciteit door de bouw van een nieuw gemaal, wil
-      Maastricht de kans op wateroverlast in de polder verkleinen. De wens van
-      agrariërs om tegelijkertijd de polder te scheiden in twee delen, met voor
-      elk deel een eigen waterpeil en waterafvoer, blijkt niet haalbaar.
+      De gemeenten *Limmel en Heugem* lorem ipsum dolor sit amet.
     steps:
       - title: Oude Steenweg, 10:00
         body: >
@@ -91,7 +80,8 @@ stories:
 
   - title: Rotterdam
     description: >
-      Wateroverlast in regio Rotterdam, Een combinatie van een flinke westerstorm en vloed hebben vrijdag geleid tot een hoog waterpeil. Om die reden is de Maeslantkering in de Nieuwe Waterweg bij Hoek van Holland alvast gereed gemaakt voor een eventuele sluiting.
+      Wateroverlast in regio Rotterdam
+    cover-image: http://www.fdportal.nijgh.nl/upload/1386318379.jpg?w=240
     steps:
       - title: Waterpeil
         body: >
@@ -153,9 +143,8 @@ stories:
 
   - title: Wateroverlast in Berlijn
     description: >
-      Berlin, Germany’s capital, dates to the 13th century. Reminders of the
-      city's turbulent 20th-century history include its Holocaust memorial and
-      the Berlin Wall's graffitied remains.
+      3Di scenario's van mei 2017
+    cover-image: http://images.gmanews.tv/webpics/2016/06/640_Germany-France_flood_2016_2016_06_02_06_53_31.jpg
     steps:
       - title: Overview
         body: >
