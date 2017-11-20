@@ -5,36 +5,35 @@ background-layers:
   - title: Topografisch
     url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
 stories:
-  - title: Wateroverlast in Limburg
+  - title: Heavy Rain Berlin
     cover-image: https://static1.persgroep.net/volkskrant/image/d56d68c8-3622-455e-99bc-80c9821cb930?h=NGRkOWQ5MlpEVTJaRFk0WXpndE16WXlNaTAwTlRWbExUazVZbU10T0RCak9UZ3lNV05pT1RNd0x6UTRNSGd6TURn
     description: >
-      De gemeenten *Limmel en Heugem* lorem ipsum dolor sit amet.
+      Germany’s capital Berlin is hit with heavy rain and thunderstorms. The bad weather floods streets, underground metro stations and basements.
     steps:
-      - title: Oude Steenweg, 10:00
+      - title: Heavy Rain Berlin
         body: >
-          Extract van Maastricht van waterdiepte bij T100 bui.
-          Met [links](http://www.google.com/) en ondersteuning voor plaatjes.
-          ![](http://media.nu.nl/m/87fx4q3aur4q_std320.jpg)
+          Berlin 29 June 2017 – Germany’s capital Berlin is hit with heavy rain and thunderstorms. The bad weather floods streets, underground metro stations and basements. Measurements show over 150 mm of rain fell in Spandau and Wilmersdorf within just 18 hours. To put this into perspective, the monthly average rainfall in Berlin is 580 mm, so a quarter of the total yearly rainfall fell!
         position:
-          latitude: 5.7296
-          longitude: 50.8802
-          zoom: 15
+          latitude: 13.359375
+          longitude: 52.519564
+          zoom: 10
           angle: 0
         background-layers:
-          - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
+          - style: 'mapbox://styles/mapbox/streets-v8'
             legend:
               - label: Danger
                 color: '#ff0000'
               - label: Floodzone
                 color: '#2D8ACC'
             opacity: 1
-      - title: Wiegershof, 10:15
+      - title: Traffic chaos and sewer overflows
         body: >
-          Limmel ligt grotendeels in het winterbed van de Maas, wat in het verleden bij hoog water vaak tot wateroverlast leidde.
+          Hours of rain, rain and nothing but rain in the German capital lead to traffic chaos and sewer overflows. The phone of the Berlin fire brigade rings non-stop. The firemen have had to respond 2500 times due to the exceptional weather conditions which the city can’t deal with. Neither the sewage system nor underground storage can deal with extreme rainfall like this.In the evening overstrained the sewage system in some parts of the city. "There have been massive overflows," authorities reported. Neither sewage nor underground storage could have absorbed the water masses. Therefore, contaminated water also ran into the Berlin waters.<hr/>
+          ![](https://www.arcgis.com/sharing/rest/content/items/7ae33664443e4c6aa18e7c22378e47cd/resources/statistieken%20deutscher%20wetterdienst__1506697511832__w576.png)
         position:
-          latitude: 5.7025
-          longitude: 50.8849
-          zoom: 18
+          latitude: 13.359375
+          longitude: 52.519564
+          zoom: 14
           angle: 0
           bearing: 90
         background-layers:
@@ -45,18 +44,15 @@ stories:
               - label: Floodzone
                 color: '#2D8ACC'
             opacity: 1
-      - title: Heerlen
+      - title: Statistics
         body: >
-          Heerlen is een Nederlandse
-          plaats en gemeente in het zuidoosten van de Nederlandse provincie
-          Limburg. Heerlen is de grootste gemeente in de Oostelijke Mijnstreek,
-          en de tweede grootste stad (plaats) in Zuid-Limburg.
+          A storm with rainfall as seen on June 29th 2017 statistically only occurs every 100 years. The month of June was, except of this extreme rain event, one of the driest ever measured in Germany. The image below shows the anomaly of the monthly precipitation. <hr/> <img src="https://www.arcgis.com/sharing/rest/content/items/7ae33664443e4c6aa18e7c22378e47cd/resources/Schermafbeelding%202017-09-30%20om%2017.51.51__1506786773608__w672.png" />
         position:
-          latitude: 5.9772
-          longitude: 50.8897
+          latitude: 13.359375
+          longitude: 52.519564
           zoom: 14
-          angle: 0
-          bearing: 180
+          angle: 20
+          bearing: 120
         background-layers:
           - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
             legend:
@@ -65,31 +61,77 @@ stories:
               - label: Floodzone
                 color: '#2D8ACC'
             opacity: 1
-        foreground-layers:
-          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=extern%3Anl%3Alimburg%3Awaterdepth_parkstad&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-07-28T09%3A51%3A08&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
-        compare:
-          - wms-url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=extern%3Anl%3Alimburg%3Awaterdepth_parkstad&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-07-28T09%3A51%3A08&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
-            position:
-              latitude: 6.0122
-              longitude: 50.9052
-          - wms-url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=extern%3Anl%3Alimburg%3Awaterdepth_parkstad_ow&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-07-28T09%3A51%3A08&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
-            position:
-              latitude: 6.0122
-              longitude: 50.9052
 
-
-  - title: Rotterdam
+  - title: Yorckstraße
     description: >
-      Wateroverlast in regio Rotterdam
+      At Yorckstraße the water level was high enough for this person take a swim on the flooded street.
     cover-image: http://www.fdportal.nijgh.nl/upload/1386318379.jpg?w=240
     steps:
-      - title: Waterpeil
+      - title: Road accesibility map
         body: >
-          Een combinatie van een flinke westerstorm en vloed hebben vrijdag geleid tot een hoog waterpeil. Om die reden is de Maeslantkering in de Nieuwe Waterweg bij Hoek van Holland alvast gereed gemaakt voor een eventuele sluiting.
+          During heavy rainfall, the water on the street can become so high that the road becomes inaccessible. The road accessibility map shows which roads stay accessible and which road are not accessible during extreme rainfall. Use the slider to gain insights.<br><br>Roads are classified as 'accessible' if there is a maximum water depth of 10 cm (green). At water depths between 10 and 30 cm, the roads are classified as 'accessible for emergency traffic' (yellow). Roads with water depths of 30 cm and more are 'inaccessible' (red). The main routes are shown thicker. <hr/> <img src="https://i.imgur.com/xYd0J5A.jpg"/>
         position:
-          latitude: 4.4848
-          longitude: 51.9188
-          zoom: 14
+          latitude: 13.3683765
+          longitude: 52.4927665
+          zoom: 15.5
+          angle: 10
+          bearing: 10
+        background-layers:
+          - style: 'mapbox://styles/mapbox/satellite-v9'
+            legend:
+              - label: Danger
+                color: '#ff0000'
+              - label: Floodzone
+                color: '#2D8ACC'
+            opacity: 0.1
+        foreground-layers:
+          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=projects%3As0000%3Aberlin_waterdepth&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-11-20T09%3A47%3A13&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+        compare:
+          - wms-url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=projects%3As0000%3Aberlin_waterdepth&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-10-20T04%3A47%3A13&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+            position:
+              latitude: 13.3683765
+              longitude: 52.4927665
+          - wms-url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=projects%3As0000%3Aberlin_waterdepth&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-12-20T12%3A47%3A13&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+            position:
+              latitude: 13.3683765
+              longitude: 52.4927665
+
+      - title: Trautenaustraße
+        body: >
+          At lot of water was reported at the crossing of Trautenaustraße and Bundesallee. Streets were flooded and water flows down into the subway.
+        position:
+          latitude: 13.3269493
+          longitude: 52.4930564
+          zoom: 16.5
+          angle: 10
+          bearing: 90
+        background-layers:
+          - style: 'mapbox://styles/mapbox/satellite-v9'
+            legend:
+              - label: Danger
+                color: '#ff0000'
+              - label: Floodzone
+                color: '#2D8ACC'
+            opacity: 0.1
+        foreground-layers:
+          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=projects%3As0000%3Aberlin_waterdepth&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-11-20T09%3A47%3A13&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+        compare:
+          - wms-url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=projects%3As0000%3Aberlin_waterdepth&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-10-20T04%3A47%3A13&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+            position:
+              latitude: 13.3683765
+              longitude: 52.4927665
+          - wms-url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=projects%3As0000%3Aberlin_waterdepth&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-12-20T12%3A47%3A13&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+            position:
+              latitude: 13.3683765
+              longitude: 52.4927665
+
+      - title: Bundesallee
+        body: >
+          A waterdepth map was created with 3Di by using the slider on the right you can get insight into the vulnerable parts of Berlin. Due to the large amount of water in the sewer system, manhole covers can come up. This poses great risks, as you can see in the video below. <hr/> <div class="iframe-container mj-video-by-url  fit"><iframe allowfullscreen="1" frameborder="0" height="226.6875" width="100%" data-src="//www.youtube.com/embed/TfL9t-za9iM?wmode=opaque&amp;rel=0" data-unload="true" src="//www.youtube.com/embed/TfL9t-za9iM?wmode=opaque&amp;rel=0"></iframe></div>
+        position:
+          latitude: 13.3272565
+          longitude: 52.4896313
+          zoom: 17
           angle: 0
           bearing: 0
         background-layers:
@@ -99,103 +141,60 @@ stories:
                 color: '#ff0000'
               - label: Floodzone
                 color: '#2D8ACC'
-            opacity: 1
+            opacity: 0.1
         foreground-layers:
-          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=3di%3Arotterdam_3di&STYLES=Blues%3A0.03%3A0.2&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2016-04-01T08%3A00%3A00&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
-      - title: Rijstroken A20 dicht
-        body: >
-          ![](https://pbs.twimg.com/media/DEhYNKMXsAAfLJ-.jpg) Knooppunt Kleinpolderplein op de A20 korte tijd afgesloten richting Hoek van Holland vanwege flinke wateroverlast. Het ging om de rijbaan tussen Rotterdam-Crooswijk en knooppunt Kleinpolderplein.
-        position:
-          latitude: 4.5110
-          longitude: 51.9474
-          zoom: 16
-          angle: 30
-          bearing: 180
-        background-layers:
-          - style: 'mapbox://styles/mapbox/streets-v8'
-            legend:
-              - label: Danger
-                color: '#ff0000'
-              - label: Floodzone
-                color: '#2D8ACC'
-            opacity: 1
-        foreground-layers:
-          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=3di%3Arotterdam_3di&STYLES=Blues%3A0.03%3A0.2&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2016-04-01T08%3A00%3A00&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
-      - title: Hofweg
-        body: >
-          Volgens de brandweer zijn er meldingen binnengekomen van wateroverlast in Rotterdam, Schiedam en Maassluis. Het gaat om ondergelopen straten, tuinen en kelders.
-        position:
-          latitude: 4.4190
-          longitude: 51.9654
-          zoom: 18
-          angle: 30
-          bearing: 90
-        background-layers:
-          - style: 'mapbox://styles/mapbox/streets-v8'
-            legend:
-              - label: Danger
-                color: '#ff0000'
-              - label: Floodzone
-                color: '#2D8ACC'
-            opacity: 1
-        foreground-layers:
-          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=extern%3Anl%3Arotterdam%3Aselected_waterdepth&STYLES=Blues%3A0.03%3A0.2&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2016-05-01T01%3A55%3A00&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=projects%3As0000%3Aberlin_waterdepth&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-11-20T09%3A47%3A13&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+        compare:
+          - wms-url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=projects%3As0000%3Aberlin_waterdepth&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-10-20T04%3A47%3A13&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+            position:
+              latitude: 13.3683765
+              longitude: 52.4927665
+          - wms-url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=projects%3As0000%3Aberlin_waterdepth&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-12-20T12%3A47%3A13&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+            position:
+              latitude: 13.3683765
+              longitude: 52.4927665
 
-  - title: Wateroverlast in Berlijn
+
+  - title: 3Di Model Berlin
     description: >
-      3Di scenario's van mei 2017
-    cover-image: http://images.gmanews.tv/webpics/2016/06/640_Germany-France_flood_2016_2016_06_02_06_53_31.jpg
+      In order to reconstruct the effects of the June 29th downpour a 3Di model has been created.
+    cover-image: http://www.fdportal.nijgh.nl/upload/1386318379.jpg?w=240
     steps:
-      - title: Overview
+      - title: Flood reconstruction
         body: >
-          The city's also known for its art scene and modern landmarks like
-          the gold-colored, swoop-roofed Berliner Philharmonie, built in 1963.
+          In order to reconstruct the effects of the June 29th downpour a 3Di model has been created. 3Di is a user-friendly water management modelling package. We selected a number of locations in Wilmersdorf where floods have been reported.
         position:
-          latitude: 13.3881604
-          longitude: 52.5075707
-          zoom: 10
-          angle: 0
+          latitude: 13.3483765
+          longitude: 52.4927665
+          zoom: 12.5
+          angle: 20
+          bearing: 0
         background-layers:
-          - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
+          - style: 'mapbox://styles/mapbox/satellite-v9'
             legend:
               - label: Danger
                 color: '#ff0000'
               - label: Floodzone
                 color: '#2D8ACC'
-            opacity: 1
-      - title: Dahme
+            opacity: 0.1
+        foreground-layers:
+          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=projects%3As0000%3Aberlin_waterdepth&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-11-20T09%3A47%3A13&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
+      - title: Elevation model
         body: >
-          The Dahme is a river that flows through the German states of
-          Brandenburg and Berlin. It is a left bank tributary of the River
-          Spree and is approximately 95 kilometres long.
+          As input for this model we use a 1 m2 elevation model to analyse the evolution of the flood. The video shows the flood locations that will be discussed in the next sections. <hr/> <img src="https://media.giphy.com/media/3o7aCPxxq7wJr00qbe/giphy.gif"/> <hr/>In order to analyse the impact on accessibility we included the Berlin road network into the model. The 3Di model could further be improved if more details about the surface and sewer system were publicly available.
         position:
-          latitude: 13.5663752
-          longitude: 52.4387332
-          zoom: 15
-          angle: 0
+          latitude: 13.3483765
+          longitude: 52.4927665
+          zoom: 14.5
+          angle: 20
+          bearing: 20
         background-layers:
-          - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
+          - style: 'mapbox://styles/mapbox/satellite-v9'
             legend:
               - label: Danger
                 color: '#ff0000'
               - label: Floodzone
                 color: '#2D8ACC'
-            opacity: 1
-      - title: Old Spandau
-        body: >
-          Spandau is a locality (Ortsteil) of Berlin in the homonymous borough
-          (Bezirk) of Spandau. The historic city is situated, for the most
-          part, on the western banks of the Havel river.
-        position:
-          latitude: 13.2149376
-          longitude: 52.5375591
-          zoom: 15
-          angle: 0
-        background-layers:
-          - url: https://{s}.tiles.mapbox.com/v3/nelenschuurmans.iaa98k8k/{z}/{x}/{y}.png
-            legend:
-              - label: Danger
-                color: '#ff0000'
-              - label: Floodzone
-                color: '#2D8ACC'
-            opacity: 1
+            opacity: 0.1
+        foreground-layers:
+          - url: https://demo.lizard.net/api/v3/wms/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=projects%3As0000%3Aberlin_waterdepth&STYLES=Blues%3A0.025%3A0.3&FORMAT=image%2Fpng&TRANSPARENT=false&HEIGHT=256&WIDTH=256&TIME=2017-11-20T09%3A47%3A13&SRS=EPSG%3A3857&BBOX={bbox-epsg-3857}
